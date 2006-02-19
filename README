@@ -1,3 +1,0 @@
-This module will download the latest Dilbert of the Day cartoon strip
-from the Dilbert website and return a binary blob of the image, or
-write it to disk.
