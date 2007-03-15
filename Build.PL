@@ -1,12 +1,13 @@
 # vim:ts=4:sw=4:tw=78
-# $Id: Build.PL 149 2006-02-08 14:52:12Z nicolaw $
+# $Id$
 
 use strict;
 use Module::Build;
 use vars qw($build);
 
+my $module = 'WWW::Dilbert';
 $build = Module::Build->new(
-		module_name        => 'WWW::Dilbert',
+		module_name        => $module,
 		license            => 'open_source',
 		create_makefile_pl => 'passthrough',
 		create_readme      => 1,
@@ -67,7 +68,7 @@ sub may_send_version_information {
 
 	my $str = sprintf('%s?%s=%s&%s=%s&%s=%s&%s=%s&%s=%s&%s=%s',
 			'http://perlgirl.org.uk/lib/usage.cgi',
-			'name',     $build->dist_name(),
+			'name',     $module,
 			'version',  $build->dist_version(),
 			'osname',   $Config::Config{osname},
 			'archname', $Config::Config{archname},
@@ -89,7 +90,7 @@ sub may_send_version_information {
 		alarm 0;
 	};
 
-	return $send ? $str : undef;
+	return defined $send && !ref($send) && "$send" eq "1" ? $str : undef;
 }
 
 1;

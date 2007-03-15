@@ -1,3 +1,13 @@
+Version 1.20 - 15th March 2007
+    + Changed Build.PL to be more paranoid defaulting
+      to no while using $build->y_n to work around
+      potential removal of expected method functionality.
+
+    + Added complain.txt.
+
+    + Small changes to POD.
+
+
 Version 1.19 - 19th February 2006
     + Added EXPORTS section to POD
 
@@ -8,9 +18,11 @@ Version 1.19 - 19th February 2006
     + Changed to build with Module::Build from
       svn instead of cvs repository
 
+
 Version 1.18 - 7th January 2006
     + Added Test::Pod and Test::Pod::Coverage
       unit tests
+
 
 Version 1.17 - 31st December 2005
     + Typoed SYNOPSYS in the POD.
@@ -18,10 +30,12 @@ Version 1.17 - 31st December 2005
     + Added more stuff in to the examples/
       directory in the distribution tarball.
 
+
 Version 1.16 - 30th December 2005
     + Forgot to add the unit test files to the
       MANIFEST. Added them now so they get shipped
       in the distrobution.
+
 
 Version 1.15 - 30th December 2005
     + Only output warning about invalid image format
@@ -34,14 +48,17 @@ Version 1.15 - 30th December 2005
     + Added maximum download size limit of 250Kb to
       avoid accidental krufty spammage of memory.
 
+
 Version 1.14 - 30th December 2005
     + Fixed an uninitialised variable warning that
       occurs if the LWP request for URL fails with
       a timeout.
 
+
 Version 1.13 - 30th December 2005
     + Changed license to Apache 2.0
       http://www.apache.org/licenses/LICENSE-2.0
+
 
 Version 1.11 - 29th December 2005
     + Complete rewrite so this module is no longer

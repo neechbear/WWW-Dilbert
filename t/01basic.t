@@ -1,4 +1,4 @@
-# $Id: 01basic.t,v 1.4 2005/12/29 21:40:09 nicolaw Exp $
+# $Id$
 
 chdir('t') if -d 't';
 use lib qw(./lib ../lib);
