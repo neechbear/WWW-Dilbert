@@ -1,4 +1,4 @@
-<SOFTPKG NAME="WWW-Dilbert" VERSION="1,19,0,0">
+<SOFTPKG NAME="WWW-Dilbert" VERSION="1,2,0,0">
     <TITLE>WWW-Dilbert</TITLE>
     <ABSTRACT>Retrieve Dilbert of the day comic strip images</ABSTRACT>
     <AUTHOR>Nicola Worthington &lt;nicolaw@cpan.org&gt;</AUTHOR>
@@ -6,6 +6,6 @@
         <DEPENDENCY NAME="LWP-UserAgent" VERSION="0,0,0,0" />
         <DEPENDENCY NAME="HTTP-Request" VERSION="0,0,0,0" />
         <DEPENDENCY NAME="Carp" VERSION="0,0,0,0" />
-        <CODEBASE HREF="PPM-WWW-Dilbert-1.19.tar.gz" />
+        <CODEBASE HREF="PPM-WWW-Dilbert-1.2.tar.gz" />
     </IMPLEMENTATION>
 </SOFTPKG>
